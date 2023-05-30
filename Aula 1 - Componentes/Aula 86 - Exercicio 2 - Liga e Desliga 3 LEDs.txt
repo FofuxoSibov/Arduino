@@ -1,0 +1,32 @@
+// Codigo em linguágem C++
+// O Void Setup é uma função 
+//que declaramos o que vamos usar no Arduino
+void setup()
+{
+  // Declarar portas em uso 2,5 e 9
+  pinMode(2, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(9, OUTPUT);
+}
+//O Void Loop é uma função infinita do Arduino
+void loop()
+{
+  // Ligar sinal alto no pino 2
+  digitalWrite(2, HIGH);
+  // Ligar sinal alto no pino 5
+  digitalWrite(5, HIGH);
+  // Ligar sinal alto no pino 9
+  digitalWrite(9, HIGH);
+  // Aguardar 2000 milisegundos
+  delay(2000); 
+  
+    
+  // Desligar sinal alto no pino 2
+  digitalWrite(2, LOW);  
+  // Desligar sinal alto no pino 5
+  digitalWrite(5, LOW);
+  // Desligar sinal alto no pino 9
+  digitalWrite(9, LOW);
+  // Aguardar 2000 milisegundos
+  delay(2000); 
+}
